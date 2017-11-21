@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>VueJS Tutorials</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  </head>
+  <body>
+    <div id="vue-app">
+      <h1>Data Binding</h1>
+      <a v-bind:href="website">The Net Ninja</a>
+      <input type="text" v-bind:value="name">
+      <p v-html="websiteTag"></p>
+
+      <hr>
+      <!-- EVENTS -->
+      <h1>Events</h1>
+      <button @click.once="add(1)">Add a Year</button>
+      <button @click="subtract(1)">Subtract a Year</button>
+      <button @dblclick="add(10)">Add 10 Years</button>
+      <button @dblclick="subtract(10)">Subtract 10 Years</button>
+      <p>My age is: {{ age }}</p>
+
+      <div id="canvas" @mousemove="updateXY">{{x}}, {{y}}</div>
+      <a @click.prevent="click" href="http://www.thenetninja.co.uk">The Net Ninja</a>
+
+      <hr>
+      <!-- KEYBOARD EVENTS -->
+      <h1>Keyboard Events</h1>
+      <label>Name:</label>
+      <input type="text" v-model="name" />
+      <span>{{ name }}</span>
+      <label>Age</label>
+      <input type="text" v-model="age" />
+      <span>{{ age }}</span>
+
+      <hr>
+      <!-- COMPUTED PROPERTIES -->
+      <h1>Computed Properties</h1>
+      <button @click="a++">Add to A</button>
+      <button @click="b++">Add to B</button>
+      <p>A - {{ a }}</p>
+      <p>B - {{ b }}</p>
+      <p>Age + A = {{ addToA }}</p>
+      <p>Age + B = {{ addToB }}</p>
+
+      <hr>
+      <!-- DYNAMIC CSS -->
+      <h1>Dynamic CSS</h1>
+      <h2>Example 1</h2>
+      <!-- <div @click="available = !available" :class="{available: available}">
+        <span>Ryu</span>
+      </div> -->
+
+      <h2>Example 2</h2>
+      <button @click="nearby = !nearby">Toggle nearby</button>
+      <button @click="available = !available">Toggle available</button>
+      <div :class="compClasses">
+        <span>Ryu</span>
+      </div>
+
+      <hr>
+      <!-- CONDITIONALS -->
+      <h1>Conditionals</h1>
+      <button @click="error = !error">Toggle Error</button>
+      <button @click="success = !success">Toggle Success</button>
+      <!-- <p v-if="error">There has been an error</p>
+      <p v-else-if="success">Whoooo, success!</p> -->
+      <p v-show="error">There has been an error</p>
+      <p v-show="success">Whoooo, success!</p>
+
+      <hr>
+      <!-- LOOPING  -->
+      <h1>Looping through lists</h1>
+      <ul>
+        <li v-for="(character,index) in characters">{{index}}. {{character}}</li>
+      </ul>
+      <ul>
+        <li v-for="(ninja, index) in ninjas">{{index}}. {{ninja.name}} - {{ninja.age}}</li>
+      </ul>
+      <template v-for="(ninja, index) in ninjas">
+        <h3>{{index}}. {{ninja.name}}</h3>
+        <p>{{ninja.age}}</p>
+      </template>
+      <template v-for="ninja in ninjas">
+        <div v-for="(key,val) in ninja">
+          <p>{{key}} - {{val}}</p>
+        </div>
+      </template>
+
+
+
+      <div style="padding-bottom:500px;"></div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

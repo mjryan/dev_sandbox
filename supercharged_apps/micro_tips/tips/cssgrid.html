@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Grid Example</title>
+  <style>
+    body {
+      display: grid;
+      grid-template-rows: 200px 1fr 1fr 200px;
+      grid-template-columns: 400px 1fr;
+      border: 2px solid red;
+    }
+    header{
+      -ms-grid-area: 1 / 1 / 2 / 3;
+      grid-area: 1 / 1 / 2 / 3;
+    }
+    main {
+      -ms-grid-area: 2 / 2 / span 2 / auto;
+      grid-area: 2 / 2 / span 2 / auto;
+    }
+    footer {
+      -ms-grid-area: 4 / 1 / auto / 3;
+      grid-area: 4 / 1 / auto / 3;
+    }
+  </style>
+</head>
+<body>
+  <header>Header</header>
+  <aside>Menu 1</aside>
+  <aside>Menu 2</aside>
+  <main>Content</main>
+  <footer>Footer</footer>
+</body>
+</html>

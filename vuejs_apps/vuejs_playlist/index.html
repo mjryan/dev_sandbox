@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Intro to Components</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+
+  <h1>Intro to Components + Refs</h1>
+
+  <div id="vue-app-one">
+    <h2>Vue app one</h2>
+    <greeting></greeting>
+    <input type="text" ref="input">
+    <button @click="readRefs">Submit</button>
+    <p>Your fave food: {{output}}</p>
+    <div ref="test">Hello</div>
+  </div>
+
+  <div id="vue-app-two">
+    <h2>Vue app two</h2>
+    <greeting></greeting>
+
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
