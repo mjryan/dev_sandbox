@@ -1,0 +1,70 @@
+{
+  "customers": [
+    {
+      "id": "1",
+      "name": "John Doe",
+      "email": "jdoe@gmail.com",
+      "age": 35
+    },
+    {
+      "id": "2",
+      "name": "Steve Smith",
+      "email": "steve@gmail.com",
+      "age": 50
+    },
+    {
+      "id": "3",
+      "name": "Sara Williams",
+      "email": "sara@gmail.com",
+      "age": 32
+    },
+    {
+      "id": "5",
+      "name": "Sara Williams",
+      "email": "sara@gmail.com",
+      "age": 24
+    },
+    {
+      "name": "Harry White",
+      "email": "harry@gmail.com",
+      "age": 44,
+      "id": "MLEAyRr"
+    },
+    {
+      "name": "Harry White",
+      "email": "harry@gmail.com",
+      "age": 44,
+      "id": "bd0fB~0"
+    },
+    {
+      "name": "Harry White",
+      "email": "harry@gmail.com",
+      "age": 44,
+      "id": "rUkdOj7"
+    },
+    {
+      "name": "Harry White",
+      "email": "harry@gmail.com",
+      "age": 44,
+      "id": "3b_kVCe"
+    },
+    {
+      "name": "Harry White",
+      "email": "harry@gmail.com",
+      "age": 44,
+      "id": "4j89RJg"
+    },
+    {
+      "name": "Harry White",
+      "email": "harry@gmail.com",
+      "age": 44,
+      "id": "Xr4unl7"
+    },
+    {
+      "name": "Harry White",
+      "email": "harry@gmail.com",
+      "age": 44,
+      "id": "wBNqCVJ"
+    }
+  ]
+}
